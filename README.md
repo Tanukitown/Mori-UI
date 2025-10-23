@@ -1,9 +1,9 @@
 # 🍃 Tanuki UI
 
 [![codecov](https://codecov.io/gh/Tanukitown/Tanuki-UI/branch/main/graph/badge.svg)](https://codecov.io/gh/Tanukitown/Tanuki-UI)
-[![npm version](https://badge.fury.io/js/tanuki-ui.svg)](https://badge.fury.io/js/tanuki-ui)
-[![npm downloads](https://img.shields.io/npm/dm/tanuki-ui.svg)](https://www.npmjs.com/package/tanuki-ui)
-[![Node.js version](https://img.shields.io/node/v/tanuki-ui.svg)](https://nodejs.org)
+[![npm version](https://badge.fury.io/js/%40tanukitown%2Fui.svg)](https://badge.fury.io/js/%40tanukitown%2Fui)
+[![npm downloads](https://img.shields.io/npm/dm/%40tanukitown%2Fui.svg)](https://www.npmjs.com/package/%40tanukitown%2Fui)
+[![Node.js version](https://img.shields.io/badge/node-%3E%3D23.10.0-green)](https://nodejs.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/react-%2320232a.svg?logo=react&logoColor=%2361DAFB)](https://react.dev)
@@ -26,13 +26,13 @@ A modern, accessible React component library built with TypeScript, Vite, and Ta
 ### Installation
 
 ```bash
-npm install tanuki-ui react react-dom
+npm install @tanukitown/ui react react-dom
 ```
 
 ### Quick Start
 
 ```tsx
-import { Button } from 'tanuki-ui';
+import { Button } from '@tanukitown/ui';
 
 export function App() {
   return (
@@ -116,7 +116,7 @@ tanuki-ui/
 A versatile button component with multiple variants and sizes.
 
 ```tsx
-import { Button } from 'tanuki-ui';
+import { Button } from '@tanukitown/ui';
 
 <Button variant="primary" size="lg">
   Large Primary Button

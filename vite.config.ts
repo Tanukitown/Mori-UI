@@ -38,7 +38,14 @@ export default defineConfig({
     coverage: {
       provider: "v8",
       reporter: ["text", "json", "html"],
-      exclude: ["node_modules/", "dist/"],
+      include: ["lib/**", "utils/**"],
+      exclude: [
+        "node_modules/",
+        "dist/",
+        "**/*.stories.ts",
+        "**/*.test.ts",
+        "**/*.test.tsx",
+      ],
     },
   },
 });
