@@ -8,6 +8,7 @@
 [![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/react-%2320232a.svg?logo=react&logoColor=%2361DAFB)](https://react.dev)
 [![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?logo=vite&logoColor=white)](https://vitejs.dev)
+[![Tailwind CSS](https://img.shields.io/badge/tailwind%20css-%2338B2AC.svg?logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
 
 A modern, accessible React component library built with TypeScript, Vite, and Tailwind CSS. Tanukitown UI provides a curated set of reusable UI components designed for building beautiful and inclusive web applications.
 
