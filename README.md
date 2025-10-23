@@ -1,6 +1,6 @@
-# 🍃 Tanuki UI
+# 🍃 Tanukitown UI
 
-[![codecov](https://codecov.io/gh/Tanukitown/Tanuki-UI/branch/main/graph/badge.svg)](https://codecov.io/gh/Tanukitown/Tanuki-UI)
+[![codecov](https://codecov.io/gh/Tanukitown/Tanukitown-UI/branch/main/graph/badge.svg)](https://codecov.io/gh/Tanukitown/Tanukitown-UI)
 [![npm version](https://badge.fury.io/js/%40tanukitown%2Fui.svg)](https://badge.fury.io/js/%40tanukitown%2Fui)
 [![npm downloads](https://img.shields.io/npm/dm/%40tanukitown%2Fui.svg)](https://www.npmjs.com/package/%40tanukitown%2Fui)
 [![Node.js version](https://img.shields.io/badge/node-%3E%3D23.10.0-green)](https://nodejs.org)
@@ -9,7 +9,7 @@
 [![React](https://img.shields.io/badge/react-%2320232a.svg?logo=react&logoColor=%2361DAFB)](https://react.dev)
 [![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?logo=vite&logoColor=white)](https://vitejs.dev)
 
-A modern, accessible React component library built with TypeScript, Vite, and Tailwind CSS. Tanuki UI provides a curated set of reusable UI components designed for building beautiful and inclusive web applications.
+A modern, accessible React component library built with TypeScript, Vite, and Tailwind CSS. Tanukitown UI provides a curated set of reusable UI components designed for building beautiful and inclusive web applications.
 
 ## Features
 
@@ -54,8 +54,8 @@ export function App() {
 
 ```bash
 # Clone the repository
-git clone https://github.com/Tanukitown/Tanuki-UI.git
-cd Tanuki-UI
+git clone https://github.com/Tanukitown/Tanukitown-UI.git
+cd Tanukitown-UI
 
 # Install dependencies
 npm install
@@ -92,7 +92,7 @@ npm run lint:fix
 ## Project Structure
 
 ```
-tanuki-ui/
+Tanukitown-UI/
 ├── .github/
 │   └── workflows/           # GitHub Actions workflows
 ├── lib/
@@ -132,7 +132,7 @@ import { Button } from '@tanukitown/ui';
 
 ## Theming
 
-Tanuki UI uses CSS custom properties for theming. The design system supports both light and dark modes:
+Tanukitown UI uses CSS custom properties for theming. The design system supports both light and dark modes:
 
 ### Light Mode Variables
 
@@ -154,7 +154,7 @@ Tanuki UI uses CSS custom properties for theming. The design system supports bot
 
 ## Documentation
 
-Interactive component documentation is available in [Storybook](https://tanukitown.github.io/Tanuki-UI/).
+Interactive component documentation is available in [Storybook](https://tanukitown.github.io/Tanukitown-UI/).
 
 ## Testing
 
@@ -180,7 +180,7 @@ npm run test:coverage
 
 ## Accessibility
 
-Tanuki UI is committed to accessibility standards:
+Tanukitown UI is committed to accessibility standards:
 
 - ✅ WCAG 2.1 AAA compliance
 - ✅ Keyboard navigation support

@@ -27,7 +27,7 @@ export const TanukiUIDesignSystem: Story = {
       {/* Header */}
       <div style={{ marginBottom: "3rem" }}>
         <h1 style={{ margin: "0 0 0.5rem 0", fontSize: "2.5rem" }}>
-          🍃 Tanuki UI
+          🍃 Tanukitown UI
         </h1>
         <p
           style={{

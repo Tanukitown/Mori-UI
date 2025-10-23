@@ -6,12 +6,12 @@ export default create({
   fontBase: '"Nunito Sans", -apple-system, "Segoe UI", sans-serif',
   fontCode: "monospace",
 
-  brandTitle: "🍃 Tanuki UI",
+  brandTitle: "🍃 Tanukitown UI",
   brandUrl: "https://github.com",
   brandImage: undefined,
   brandTarget: "_self",
 
-  // Tanuki UI Colors
+  // Tanukitown UI Colors
   colorPrimary: "#5C4A36",
   colorSecondary: "#2D4620",
 
