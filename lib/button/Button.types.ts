@@ -1,0 +1,40 @@
+import { type LucideIcon } from "lucide-react";
+import { type ComponentProps } from "react";
+
+export interface ButtonProps extends ComponentProps<"button"> {
+  /**
+   * The variant of the button.
+   * @default "primary"
+   */
+  variant?:
+    | "primary"
+    | "secondary"
+    | "tertiary"
+    | "success"
+    | "warning"
+    | "error"
+    | "neutral";
+
+  /**
+   * The size of the button.
+   * @default "medium"
+   */
+  size?: "small" | "medium" | "large";
+
+  /**
+   * Whether the button is in a loading state.
+   * @default false
+   */
+  isLoading?: boolean;
+
+  /**
+   * An optional icon to display in the button.
+   */
+  icon?: LucideIcon;
+
+  /**
+   * The position of the icon relative to the button text.
+   * @default "left"
+   */
+  iconPosition?: "left" | "right";
+}

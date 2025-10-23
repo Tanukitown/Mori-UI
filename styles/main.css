@@ -1,0 +1,107 @@
+@import "tailwindcss" prefix(tui);
+@import "../lib/button/Button.css";
+@import "./dark.css";
+@import "./storybook.css";
+
+@theme {
+  --color-bg-primary: #F5EFE7;
+  --color-bg-secondary: #EBE4DA;
+  --color-bg-tertiary: #E1D9CF;
+
+  --color-text-primary: #2C2520;
+  --color-text-secondary: #5C5651;
+  --color-text-tertiary: #8B8680;
+  --color-text-muted: #B8AFA6;
+
+  /* Primary - Warm brown accent (darker for WCAG AAA contrast) */
+  --color-primary-50: #FBF9F6;
+  --color-primary-100: #F7F3ED;
+  --color-primary-200: #EFEAE0;
+  --color-primary-300: #E7DFD1;
+  --color-primary-400: #D9CFBF;
+  --color-primary-500: #5C4A36;
+  --color-primary-600: #4D3E2D;
+  --color-primary-700: #3F3123;
+  --color-primary-800: #3A2D23;
+  --color-primary-900: #2D2118;
+
+  /* Secondary - Sage green for balance (darkened for WCAG AAA contrast) */
+  --color-secondary-50: #F6FAF5;
+  --color-secondary-100: #EDF5EB;
+  --color-secondary-200: #D4E7CD;
+  --color-secondary-300: #BBD9B1;
+  --color-secondary-400: #3D5922;
+  --color-secondary-500: #2D4620;
+  --color-secondary-600: #233618;
+  --color-secondary-700: #1B2810;
+  --color-secondary-800: #141A08;
+  --color-secondary-900: #0D0E04;
+
+  /* Accent - Warm terracotta */
+  --color-accent-50: #FBF7F4;
+  --color-accent-100: #F7EFE8;
+  --color-accent-200: #EEDDCA;
+  --color-accent-300: #E5CBAC;
+  --color-accent-400: #D9A876;
+  --color-accent-500: #CD8545;
+  --color-accent-600: #B67536;
+  --color-accent-700: #9D6228;
+  --color-accent-800: #84501D;
+  --color-accent-900: #6B3E14;
+
+  /* Success */
+  --color-success-50: #F0FDF4;
+  --color-success-100: #DCFCE7;
+  --color-success-500: #6EE7B7;
+  --color-success-600: #10B981;
+  --color-success-900: #1B7D5C;
+
+  /* Warning */
+  --color-warning-50: #FFFBEB;
+  --color-warning-100: #FEF3C7;
+  --color-warning-500: #F59E0B;
+  --color-warning-600: #D97706;
+  --color-warning-900: #92400E;
+
+  /* Error */
+  --color-error-50: #FEF2F2;
+  --color-error-100: #FEE2E2;
+  --color-error-500: #EF4444;
+  --color-error-600: #DC2626;
+  --color-error-900: #7F1D1D;
+
+  /* Neutral grays */
+  --color-neutral-50: #FAFAF9;
+  --color-neutral-100: #F5F5F4;
+  --color-neutral-200: #E7E5E4;
+  --color-neutral-300: #D6D3D1;
+  --color-neutral-400: #A8A29E;
+  --color-neutral-500: #78716F;
+  --color-neutral-600: #57534E;
+  --color-neutral-700: #3F3935;
+  --color-neutral-800: #292522;
+  --color-neutral-900: #1C1917;
+}
+
+@layer base {
+  body {
+    @apply tui:bg-bg-primary tui:text-text-primary;
+  }
+
+  a {
+    @apply tui:text-accent-700 tui:hover:text-accent-900 tui:transition-colors;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply tui:text-text-primary;
+  }
+
+  code {
+    @apply tui:text-accent-900 tui:bg-bg-secondary tui:px-1 tui:rounded;
+  }
+}

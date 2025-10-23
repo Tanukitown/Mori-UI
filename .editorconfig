@@ -1,0 +1,11 @@
+root = true
+
+[*]
+indent_style = space
+charset = utf-8
+
+[*.{js,ts,jsx,tsx}]
+indent_size = 2
+insert_final_newline = true
+charset = utf-8-bom
+trim_trailing_whitespace = true

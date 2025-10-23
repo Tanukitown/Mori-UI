@@ -1,0 +1,105 @@
+/* Button component styles */
+@layer components {
+  .tui\:btn-primary {
+    @apply tui:bg-primary-500 tui:text-white tui:hover:bg-primary-600 tui:active:bg-primary-700;
+  }
+
+  .tui\:btn-secondary {
+    @apply tui:bg-secondary-500 tui:text-white tui:hover:bg-secondary-600 tui:active:bg-secondary-700;
+  }
+
+  .tui\:btn-tertiary {
+    @apply tui:bg-neutral-200 tui:text-text-primary tui:hover:bg-neutral-300 tui:active:bg-neutral-400;
+  }
+
+  .tui\:btn-success {
+    background-color: var(--tui-color-success-600);
+    color: white;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .tui\:btn-success:hover {
+    background-color: var(--tui-color-success-700);
+  }
+
+  .tui\:btn-success:active {
+    background-color: var(--tui-color-success-800);
+  }
+
+  .tui\:btn-warning {
+    background-color: var(--tui-color-warning-600);
+    color: white;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .tui\:btn-warning:hover {
+    background-color: var(--tui-color-warning-700);
+  }
+
+  .tui\:btn-warning:active {
+    background-color: var(--tui-color-warning-800);
+  }
+
+  .tui\:btn-error {
+    background-color: var(--tui-color-error-600);
+    color: white;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .tui\:btn-error:hover {
+    background-color: var(--tui-color-error-700);
+  }
+
+  .tui\:btn-error:active {
+    background-color: var(--tui-color-error-800);
+  }
+
+  .tui\:btn-neutral {
+    background-color: var(--tui-color-neutral-600);
+    color: white;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .tui\:btn-neutral:hover {
+    background-color: var(--tui-color-neutral-700);
+  }
+
+  .tui\:btn-neutral:active {
+    background-color: var(--tui-color-neutral-800);
+  }
+
+  .tui\:btn-small {
+    @apply tui:px-2 tui:py-1 tui:text-sm;
+  }
+
+  .tui\:btn-medium {
+    @apply tui:px-4 tui:py-2 tui:text-base;
+  }
+
+  .tui\:btn-large {
+    @apply tui:px-6 tui:py-3 tui:text-lg;
+  }
+
+  .tui\:btn-base {
+    @apply tui:rounded tui:font-medium tui:disabled:opacity-50 tui:disabled:cursor-not-allowed;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .tui\:btn-icon {
+    display: inline-flex;
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+  }
+}

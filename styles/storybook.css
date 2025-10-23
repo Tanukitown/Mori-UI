@@ -1,0 +1,217 @@
+/* Storybook documentation styling overrides */
+
+/* Apply theme to html and body */
+html,
+body {
+  background-color: var(--color-bg-primary) !important;
+  color: var(--color-text-primary) !important;
+}
+
+/* Hide Storybook icon and rebrand */
+.sb-logo {
+  display: none !important;
+}
+
+.sb-bar svg {
+  display: none !important;
+}
+
+/* Rebrand the title */
+.sb-bar a[title="Storybook"]::before {
+  content: "Tanuki UI" !important;
+}
+
+.sb-bar a[title="Storybook"] {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: var(--color-primary-600) !important;
+}
+
+/* Override Storybook's fixed colors */
+.sb-wrapper {
+  background-color: var(--color-bg-primary) !important;
+  color: var(--color-text-primary) !important;
+}
+
+/* Storybook docs wrapper */
+.sbdocs {
+  background-color: var(--color-bg-primary) !important;
+  color: var(--color-text-primary) !important;
+}
+
+.sbdocs-wrapper {
+  background-color: var(--color-bg-primary) !important;
+}
+
+/* Override sb-unstyled to apply our theme */
+.sb-unstyled {
+  background-color: var(--color-bg-primary) !important;
+  color: var(--color-text-primary) !important;
+}
+
+/* Headings */
+.sbdocs .sbdocs-h1,
+.sbdocs .sbdocs-h2,
+.sbdocs .sbdocs-h3 {
+  color: var(--color-text-primary) !important;
+}
+
+/* Text content */
+.sbdocs p,
+.sbdocs li,
+.sbdocs td {
+  color: var(--color-text-primary) !important;
+}
+
+.sbdocs code {
+  background-color: var(--color-bg-secondary) !important;
+  color: var(--color-accent-900) !important;
+}
+
+/* Override sb-unstyled text elements */
+.sb-unstyled h1,
+.sb-unstyled h2,
+.sb-unstyled h3,
+.sb-unstyled h4,
+.sb-unstyled h5,
+.sb-unstyled h6 {
+  color: var(--color-text-primary) !important;
+}
+
+.sb-unstyled p,
+.sb-unstyled li {
+  color: var(--color-text-primary) !important;
+}
+
+.sb-unstyled code {
+  background-color: var(--color-bg-secondary) !important;
+  color: var(--color-accent-900) !important;
+  padding: 0.25rem 0.5rem !important;
+  border-radius: 0.25rem !important;
+}
+
+/* ============================================
+   Table Styling - .sbdocs table
+   ============================================ */
+.sbdocs table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  border: 1px solid var(--color-neutral-300) !important;
+}
+
+.sbdocs table thead {
+  background-color: var(--color-neutral-100) !important;
+}
+
+.sbdocs table th {
+  background-color: var(--color-neutral-100) !important;
+  color: var(--color-text-primary) !important;
+  padding: 0.75rem 1rem !important;
+  text-align: left;
+  font-weight: 600;
+  border: 1px solid var(--color-neutral-300) !important;
+}
+
+.sbdocs table td {
+  color: var(--color-text-primary) !important;
+  padding: 0.75rem 1rem !important;
+  border: 1px solid var(--color-neutral-200) !important;
+}
+
+.sbdocs table tbody tr {
+  background-color: var(--color-bg-primary) !important;
+}
+
+.sbdocs table tbody tr:nth-child(even) {
+  background-color: var(--color-neutral-50) !important;
+}
+
+.sbdocs table tbody tr:hover {
+  background-color: var(--color-bg-secondary) !important;
+}
+
+/* ============================================
+   Table Styling - .sb-unstyled table
+   ============================================ */
+.sb-unstyled table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  border: 1px solid var(--color-neutral-300) !important;
+}
+
+.sb-unstyled table thead {
+  background-color: var(--color-neutral-100) !important;
+}
+
+.sb-unstyled table th {
+  background-color: var(--color-neutral-100) !important;
+  color: var(--color-text-primary) !important;
+  padding: 0.75rem 1rem !important;
+  text-align: left;
+  font-weight: 600;
+  border: 1px solid var(--color-neutral-300) !important;
+}
+
+.sb-unstyled table td {
+  color: var(--color-text-primary) !important;
+  padding: 0.75rem 1rem !important;
+  border: 1px solid var(--color-neutral-200) !important;
+}
+
+.sb-unstyled table tbody tr {
+  background-color: var(--color-bg-primary) !important;
+}
+
+.sb-unstyled table tbody tr:nth-child(even) {
+  background-color: var(--color-neutral-50) !important;
+}
+
+.sb-unstyled table tbody tr:hover {
+  background-color: var(--color-bg-secondary) !important;
+}
+
+/* ============================================
+   Storybook Generated Table Classes
+   ============================================ */
+.css-v2ifgj.css-v2ifgj {
+  border-spacing: 0 !important;
+  color: var(--color-text-primary) !important;
+  margin: 1.5rem 0 !important;
+}
+
+.css-v2ifgj.css-v2ifgj thead th {
+  background-color: var(--color-neutral-100) !important;
+  color: var(--color-text-primary) !important;
+  padding: 0.75rem 1rem !important;
+  border: 1px solid var(--color-neutral-300) !important;
+  font-weight: 600;
+}
+
+.css-v2ifgj.css-v2ifgj td,
+.css-v2ifgj.css-v2ifgj th {
+  padding: 0.75rem 1rem !important;
+  border: 1px solid var(--color-neutral-300) !important;
+  color: var(--color-text-primary) !important;
+  background-color: var(--color-bg-primary) !important;
+  text-overflow: initial !important;
+  vertical-align: middle !important;
+}
+
+.css-v2ifgj.css-v2ifgj tbody > tr > * {
+  background-color: var(--color-bg-primary) !important;
+  border-top: 1px solid var(--color-neutral-300) !important;
+}
+
+.css-v2ifgj.css-v2ifgj tbody > tr:nth-child(even) > * {
+  background-color: var(--color-neutral-50) !important;
+}
+
+.css-v2ifgj.css-v2ifgj tbody > tr:hover > * {
+  background-color: var(--color-bg-secondary) !important;
+}
+
+.css-v2ifgj.css-v2ifgj tbody {
+  filter: none !important;
+}
