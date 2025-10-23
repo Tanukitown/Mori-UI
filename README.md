@@ -1,5 +1,14 @@
 # 🍃 Tanuki UI
 
+[![codecov](https://codecov.io/gh/Tanukitown/Tanuki-UI/branch/main/graph/badge.svg)](https://codecov.io/gh/Tanukitown/Tanuki-UI)
+[![npm version](https://badge.fury.io/js/tanuki-ui.svg)](https://badge.fury.io/js/tanuki-ui)
+[![npm downloads](https://img.shields.io/npm/dm/tanuki-ui.svg)](https://www.npmjs.com/package/tanuki-ui)
+[![Node.js version](https://img.shields.io/node/v/tanuki-ui.svg)](https://nodejs.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/react-%2320232a.svg?logo=react&logoColor=%2361DAFB)](https://react.dev)
+[![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?logo=vite&logoColor=white)](https://vitejs.dev)
+
 A modern, accessible React component library built with TypeScript, Vite, and Tailwind CSS. Tanuki UI provides a curated set of reusable UI components designed for building beautiful and inclusive web applications.
 
 ## Features
