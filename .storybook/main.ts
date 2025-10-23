@@ -11,6 +11,7 @@ const config: StorybookConfig = {
     "../lib/main.stories.@(js|jsx|ts|tsx)",
     "../lib/**/*.stories.@(js|jsx|ts|tsx)",
   ],
+  staticDirs: ["./public"],
   addons: ["@storybook/addon-docs", "@storybook/addon-a11y"],
   framework: {
     name: "@storybook/react-vite",

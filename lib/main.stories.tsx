@@ -21,7 +21,7 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const TanukiUIDesignSystem: Story = {
+export const TanukitownUIDesignSystem: Story = {
   render: () => (
     <div style={{ padding: "2rem", maxWidth: "1200px" }}>
       {/* Header */}
