@@ -1,3 +1,5 @@
+@reference "../../../styles/main.css";
+
 /* Button component styles */
 @layer components {
   .moriui\:btn-primary {
@@ -89,7 +91,7 @@
   }
 
   .moriui\:btn-base {
-    @apply moriui:rounded moriui:font-medium moriui:disabled:opacity-50 moriui:disabled:cursor-not-allowed;
+    @apply moriui:rounded moriui:font-medium moriui:cursor-pointer moriui:disabled:opacity-50 moriui:disabled:cursor-not-allowed;
     display: inline-flex;
     align-items: center;
     justify-content: center;

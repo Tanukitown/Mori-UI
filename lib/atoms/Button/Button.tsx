@@ -2,6 +2,7 @@ import { type ButtonProps } from "./Button.types";
 
 import clpx from "@Utils/classPrefixer";
 import { type PropsWithChildren } from "react";
+import "./Button.css";
 
 export const Button = ({
   variant = "primary",

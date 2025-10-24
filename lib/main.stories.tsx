@@ -147,6 +147,56 @@ export const moriUIDesignSystem: Story = {
           </div>
         </div>
 
+        {/* Neutral Colors */}
+        <div style={{ marginBottom: "2rem" }}>
+          <h3 style={{ marginBottom: "1rem", fontSize: "1.1rem" }}>
+            Neutral - Grayscale
+          </h3>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(5, 1fr)",
+              gap: "1rem",
+            }}
+          >
+            {[
+              { name: "50", color: "var(--color-neutral-50)" },
+              { name: "100", color: "var(--color-neutral-100)" },
+              { name: "200", color: "var(--color-neutral-200)" },
+              { name: "300", color: "var(--color-neutral-300)" },
+              { name: "400", color: "var(--color-neutral-400)" },
+              { name: "500", color: "var(--color-neutral-500)" },
+              { name: "600", color: "var(--color-neutral-600)" },
+              { name: "700", color: "var(--color-neutral-700)" },
+              { name: "800", color: "var(--color-neutral-800)" },
+              { name: "900", color: "var(--color-neutral-900)" },
+            ].map((swatch) => (
+              <div
+                key={swatch.name}
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  gap: "0.5rem",
+                }}
+              >
+                <div
+                  style={{
+                    width: "100%",
+                    height: "80px",
+                    borderRadius: "0.5rem",
+                    backgroundColor: swatch.color,
+                    border: "1px solid var(--color-neutral-300)",
+                  }}
+                />
+                <small style={{ fontSize: "0.75rem", opacity: 0.7 }}>
+                  {swatch.name}
+                </small>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Status Colors */}
         <div style={{ marginBottom: "2rem" }}>
           <h3 style={{ marginBottom: "1rem", fontSize: "1.1rem" }}>

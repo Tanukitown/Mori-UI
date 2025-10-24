@@ -1,7 +1,6 @@
 @import '@fontsource-variable/manrope';
 
 @import "tailwindcss" prefix(moriui);
-@import "../lib/button/Button.css";
 @import "./dark.css";
 @import "./storybook.css";
 
