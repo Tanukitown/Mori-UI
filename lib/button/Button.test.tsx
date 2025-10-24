@@ -133,7 +133,26 @@ describe("Button Component", () => {
     it("replaces children text with loading text", () => {
       render(<Button isLoading>Submit</Button>);
       expect(screen.queryByText("Submit")).not.toBeInTheDocument();
-      expect(screen.getByText("Loading...")).toBeInTheDocument();
+      expect(screen.getByText("Loading")).toBeInTheDocument();
+    });
+
+    it("displays custom loading text when provided", () => {
+      render(
+        <Button isLoading loadingText="Saving">
+          Save
+        </Button>,
+      );
+      expect(screen.queryByText("Save")).not.toBeInTheDocument();
+      expect(screen.getByText("Saving")).toBeInTheDocument();
+    });
+
+    it("renders loading dots animation", () => {
+      render(<Button isLoading>Click me</Button>);
+      const button = screen.getByRole("button", { name: /loading/i });
+      const dotsContainer = button.querySelector(".tui\\:btn-loading-dots");
+      expect(dotsContainer).toBeInTheDocument();
+      const dots = button.querySelectorAll(".tui\\:btn-loading-dot");
+      expect(dots).toHaveLength(3);
     });
   });
 
