@@ -25,6 +25,10 @@
     "noUncheckedSideEffectImports": true,
 
     "paths": {
+      "@Atoms/*": ["./lib/atoms/*"],
+      "@Molecules/*": ["./lib/molecules/*"],
+      "@Organisms/*": ["./lib/organisms/*"],
+      "@Templates/*": ["./lib/templates/*"],
       "@Styles/*": ["./styles/*"],
       "@Utils/*": ["./utils/*"]
     }

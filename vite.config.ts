@@ -27,6 +27,10 @@ export default defineConfig({
   },
   resolve: {
     alias: {
+      "@Atoms": resolve(__dirname, "lib/atoms"),
+      "@Molecules": resolve(__dirname, "lib/molecules"),
+      "@Organisms": resolve(__dirname, "lib/organisms"),
+      "@Templates": resolve(__dirname, "lib/templates"),
       "@Styles": resolve(__dirname, "styles"),
       "@Utils": resolve(__dirname, "utils"),
     },

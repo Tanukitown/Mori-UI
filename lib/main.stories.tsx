@@ -1,6 +1,5 @@
-import { Button } from "./button/Button";
-import { type ButtonVariant } from "./button/Button.types";
-
+import { Button } from "@Atoms/Button";
+import { type ButtonVariant } from "@Atoms/Button/Button.types";
 import { type Meta, type StoryObj } from "@storybook/react";
 import {
   CheckCircle,

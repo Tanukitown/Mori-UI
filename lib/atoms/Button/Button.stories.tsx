@@ -5,7 +5,7 @@ import { type Meta, type StoryObj } from "@storybook/react";
 import { CheckCircle, AlertCircle, Plus, Trash2 } from "lucide-react";
 
 const meta = {
-  title: "Components/Button",
+  title: "Atoms/Button",
   component: Button,
   tags: ["autodocs"],
   argTypes: {

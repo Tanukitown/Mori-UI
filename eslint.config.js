@@ -83,6 +83,33 @@ export default tseslint.config(
           fixStyle: "inline-type-imports",
         },
       ],
+      "no-restricted-imports": [
+        "error",
+        {
+          patterns: [
+            {
+              group: ["./atoms/**", "!./atoms"],
+              message:
+                'Use the "@Atoms" alias instead of relative imports from "lib/atoms"',
+            },
+            {
+              group: ["./molecules/**", "!./molecules"],
+              message:
+                'Use the "@Molecules" alias instead of relative imports from "lib/molecules"',
+            },
+            {
+              group: ["./organisms/**", "!./organisms"],
+              message:
+                'Use the "@Organisms" alias instead of relative imports from "lib/organisms"',
+            },
+            {
+              group: ["./templates/**", "!./templates"],
+              message:
+                'Use the "@Templates" alias instead of relative imports from "lib/templates"',
+            },
+          ],
+        },
+      ],
     },
   },
 );

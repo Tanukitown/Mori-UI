@@ -92,12 +92,17 @@ npm run lint:fix
 
 ## Project Structure
 
+Mori UI follows the **Atomic Design** methodology for component organization. See [ATOMIC_DESIGN.md](./ATOMIC_DESIGN.md) for detailed information about the component structure and how to add new components.
+
 ```
 Mori-UI/
 ├── .github/
 │   └── workflows/           # GitHub Actions workflows
 ├── lib/
-│   ├── button/             # Button component
+│   ├── atoms/              # Atomic building blocks (Button, etc.)
+│   ├── molecules/          # Component combinations (to be built)
+│   ├── organisms/          # Complex components (to be built)
+│   ├── templates/          # Page layouts (to be built)
 │   ├── utils/              # Utility functions
 │   └── main.ts             # Main export file
 ├── styles/
@@ -106,6 +111,7 @@ Mori-UI/
 │   └── storybook.css       # Storybook-specific styles
 ├── .storybook/             # Storybook configuration
 ├── vite.config.ts          # Vite configuration
+├── ATOMIC_DESIGN.md        # Atomic design documentation
 ├── tsconfig.json           # TypeScript configuration
 └── package.json            # Project dependencies
 ```
@@ -199,6 +205,27 @@ Mori UI is committed to accessibility standards:
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+For detailed contribution guidelines and workflows, please refer to:
+
+- **[CONTRIBUTING.md](./CONTRIBUTING.md)** - Full contribution workflow and development guidelines
+- **[QUICK_START_DEVELOPMENT.md](./QUICK_START_DEVELOPMENT.md)** - Quick reference guide for developers with templates
+- **[COMPONENT_UPDATE_CHECKLIST.md](./COMPONENT_UPDATE_CHECKLIST.md)** - Checklist for component updates and PR submissions
+
+### Quick Development Start
+
+```bash
+# Install dependencies
+npm install
+
+# Start development Storybook
+npm run storybook
+
+# Run tests in watch mode
+npm run test
+
+# See QUICK_START_DEVELOPMENT.md for common tasks and templates
+```
 
 ## License
 
