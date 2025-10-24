@@ -1,109 +1,109 @@
 /* Button component styles */
 @layer components {
-  .tui\:btn-primary {
-    @apply tui:bg-primary-500 tui:text-white tui:hover:bg-primary-600 tui:active:bg-primary-700;
+  .moriui\:btn-primary {
+    @apply moriui:bg-primary-500 moriui:text-white moriui:hover:bg-primary-600 moriui:active:bg-primary-700;
   }
 
-  .tui\:btn-secondary {
-    @apply tui:bg-secondary-500 tui:text-white tui:hover:bg-secondary-600 tui:active:bg-secondary-700;
+  .moriui\:btn-secondary {
+    @apply moriui:bg-secondary-500 moriui:text-white moriui:hover:bg-secondary-600 moriui:active:bg-secondary-700;
   }
 
-  .tui\:btn-tertiary {
-    @apply tui:bg-neutral-200 tui:text-text-primary tui:hover:bg-neutral-300 tui:active:bg-neutral-400;
+  .moriui\:btn-tertiary {
+    @apply moriui:bg-neutral-200 moriui:text-text-primary moriui:hover:bg-neutral-300 moriui:active:bg-neutral-400;
   }
 
-  .tui\:btn-success {
-    background-color: var(--tui-color-success-600);
+  .moriui\:btn-success {
+    background-color: var(--moriui-color-success-600);
     color: white;
     transition-property: background-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
   }
 
-  .tui\:btn-success:hover {
-    background-color: var(--tui-color-success-700);
+  .moriui\:btn-success:hover {
+    background-color: var(--moriui-color-success-700);
   }
 
-  .tui\:btn-success:active {
-    background-color: var(--tui-color-success-800);
+  .moriui\:btn-success:active {
+    background-color: var(--moriui-color-success-800);
   }
 
-  .tui\:btn-warning {
-    background-color: var(--tui-color-warning-600);
+  .moriui\:btn-warning {
+    background-color: var(--moriui-color-warning-600);
     color: white;
     transition-property: background-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
   }
 
-  .tui\:btn-warning:hover {
-    background-color: var(--tui-color-warning-700);
+  .moriui\:btn-warning:hover {
+    background-color: var(--moriui-color-warning-700);
   }
 
-  .tui\:btn-warning:active {
-    background-color: var(--tui-color-warning-800);
+  .moriui\:btn-warning:active {
+    background-color: var(--moriui-color-warning-800);
   }
 
-  .tui\:btn-error {
-    background-color: var(--tui-color-error-600);
+  .moriui\:btn-error {
+    background-color: var(--moriui-color-error-600);
     color: white;
     transition-property: background-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
   }
 
-  .tui\:btn-error:hover {
-    background-color: var(--tui-color-error-700);
+  .moriui\:btn-error:hover {
+    background-color: var(--moriui-color-error-700);
   }
 
-  .tui\:btn-error:active {
-    background-color: var(--tui-color-error-800);
+  .moriui\:btn-error:active {
+    background-color: var(--moriui-color-error-800);
   }
 
-  .tui\:btn-neutral {
-    background-color: var(--tui-color-neutral-600);
+  .moriui\:btn-neutral {
+    background-color: var(--moriui-color-neutral-600);
     color: white;
     transition-property: background-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
   }
 
-  .tui\:btn-neutral:hover {
-    background-color: var(--tui-color-neutral-700);
+  .moriui\:btn-neutral:hover {
+    background-color: var(--moriui-color-neutral-700);
   }
 
-  .tui\:btn-neutral:active {
-    background-color: var(--tui-color-neutral-800);
+  .moriui\:btn-neutral:active {
+    background-color: var(--moriui-color-neutral-800);
   }
 
-  .tui\:btn-small {
-    @apply tui:px-2 tui:py-1 tui:text-sm;
+  .moriui\:btn-small {
+    @apply moriui:px-2 moriui:py-1 moriui:text-sm;
   }
 
-  .tui\:btn-medium {
-    @apply tui:px-4 tui:py-2 tui:text-base;
+  .moriui\:btn-medium {
+    @apply moriui:px-4 moriui:py-2 moriui:text-base;
   }
 
-  .tui\:btn-large {
-    @apply tui:px-6 tui:py-3 tui:text-lg;
+  .moriui\:btn-large {
+    @apply moriui:px-6 moriui:py-3 moriui:text-lg;
   }
 
-  .tui\:btn-base {
-    @apply tui:rounded tui:font-medium tui:disabled:opacity-50 tui:disabled:cursor-not-allowed;
+  .moriui\:btn-base {
+    @apply moriui:rounded moriui:font-medium moriui:disabled:opacity-50 moriui:disabled:cursor-not-allowed;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
   }
 
-  .tui\:btn-icon {
+  .moriui\:btn-icon {
     display: inline-flex;
     width: 1.25rem;
     height: 1.25rem;
     flex-shrink: 0;
   }
 
-  .tui\:btn-loading-dots {
+  .moriui\:btn-loading-dots {
     display: inline-flex;
     gap: 0.25rem;
     margin-left: 0.125rem;
@@ -111,7 +111,7 @@
     height: 1em;
   }
 
-  .tui\:btn-loading-dot {
+  .moriui\:btn-loading-dot {
     display: inline-block;
     width: 0.25rem;
     height: 0.25rem;
@@ -120,11 +120,11 @@
     animation: tui-bounce 1.4s infinite ease-in-out both;
   }
 
-  .tui\:btn-loading-dot:nth-child(1) {
+  .moriui\:btn-loading-dot:nth-child(1) {
     animation-delay: -0.32s;
   }
 
-  .tui\:btn-loading-dot:nth-child(2) {
+  .moriui\:btn-loading-dot:nth-child(2) {
     animation-delay: -0.16s;
   }
 

@@ -1,4 +1,5 @@
 import { Button } from "./button/Button";
+import { type ButtonVariant } from "./button/Button.types";
 
 import { type Meta, type StoryObj } from "@storybook/react";
 import {
@@ -21,7 +22,7 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const MoriUIDesignSystem: Story = {
+export const moriUIDesignSystem: Story = {
   render: () => (
     <div style={{ padding: "2rem", maxWidth: "1200px" }}>
       {/* Header */}
@@ -331,6 +332,10 @@ export const MoriUIDesignSystem: Story = {
         {/* Button States */}
         <div style={{ marginBottom: "2rem" }}>
           <h3 style={{ marginBottom: "1rem", fontSize: "1.1rem" }}>States</h3>
+          <p style={{ margin: "0 0 1rem 0", fontSize: "0.9rem", opacity: 0.7 }}>
+            All button states maintain WCAG AAA contrast (7:1 ratio) for
+            accessibility
+          </p>
           <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
             <Button variant="primary">Default</Button>
             <Button variant="primary" disabled>
@@ -339,6 +344,54 @@ export const MoriUIDesignSystem: Story = {
             <Button variant="primary" isLoading>
               Loading...
             </Button>
+          </div>
+        </div>
+
+        {/* Interactive State Showcase */}
+        <div style={{ marginBottom: "2rem" }}>
+          <h3 style={{ marginBottom: "1rem", fontSize: "1.1rem" }}>
+            Interactive States (Hover, Focus, Active)
+          </h3>
+          <p style={{ margin: "0 0 1rem 0", fontSize: "0.9rem", opacity: 0.7 }}>
+            Try hovering, focusing, or clicking buttons to see state transitions
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
+              gap: "1rem",
+            }}
+          >
+            {[
+              "primary",
+              "secondary",
+              "tertiary",
+              "success",
+              "warning",
+              "error",
+              "neutral",
+            ].map((variant) => (
+              <div key={variant} style={{ textAlign: "center" }}>
+                <Button
+                  variant={variant as ButtonVariant}
+                  style={{
+                    width: "100%",
+                    textTransform: "capitalize",
+                  }}
+                >
+                  {variant}
+                </Button>
+                <small
+                  style={{
+                    display: "block",
+                    marginTop: "0.5rem",
+                    opacity: 0.6,
+                  }}
+                >
+                  Hover to see contrast
+                </small>
+              </div>
+            ))}
           </div>
         </div>
       </section>

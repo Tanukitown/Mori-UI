@@ -7,7 +7,7 @@
     "build": "tsc --p ./tsconfig.build.json && vite build",
     "build-storybook": "storybook build",
     "lint": "tsc --noEmit && eslint --format table --color .",
-    "lint:fix": "eslint --fix .",
+    "lint:fix": "eslint --fix --format table --color .",
     "test": "vitest run",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage",
@@ -34,6 +34,7 @@
     "@types/react-dom": "^19.2.2",
     "@vitejs/plugin-react": "^5.0.4",
     "@vitest/coverage-v8": "^3.2.4",
+    "canvas": "^3.2.0",
     "classnames": "^2.5.1",
     "eslint": "^9.38.0",
     "eslint-config-prettier": "^10.1.8",
@@ -53,7 +54,8 @@
     "typescript-eslint": "^8.46.2",
     "vite": "^7.1.12",
     "vite-plugin-dts": "^4.5.4",
-    "vitest": "^3.2.4"
+    "vitest": "^3.2.4",
+    "vitest-axe": "^0.1.0"
   },
   "engines": {
     "node": ">= 23.10.0",

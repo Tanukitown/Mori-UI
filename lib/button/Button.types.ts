@@ -1,19 +1,21 @@
 import { type LucideIcon } from "lucide-react";
 import { type ComponentProps } from "react";
 
+export type ButtonVariant =
+  | "primary"
+  | "secondary"
+  | "tertiary"
+  | "success"
+  | "warning"
+  | "error"
+  | "neutral";
+
 export interface ButtonProps extends ComponentProps<"button"> {
   /**
    * The variant of the button.
    * @default "primary"
    */
-  variant?:
-    | "primary"
-    | "secondary"
-    | "tertiary"
-    | "success"
-    | "warning"
-    | "error"
-    | "neutral";
+  variant?: ButtonVariant;
 
   /**
    * The size of the button.

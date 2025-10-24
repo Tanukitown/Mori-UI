@@ -4,7 +4,7 @@ const clpx = (...args: classNames.ArgumentArray): string => {
   const classes = classNames(args);
   return classes
     .split(" ")
-    .map((className) => `tui:${className}`)
+    .map((className) => `moriui:${className}`)
     .join(" ");
 };
 

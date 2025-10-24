@@ -1,7 +1,7 @@
-import moriUITheme from "./theme";
+import moriuiTheme from "./theme";
 
 import { addons } from "storybook/manager-api";
 
 addons.setConfig({
-  theme: moriUITheme,
+  theme: moriuiTheme,
 });
