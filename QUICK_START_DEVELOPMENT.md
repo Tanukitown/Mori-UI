@@ -35,13 +35,19 @@ Design System: lib/main.stories.tsx ........ Update this too!
 ## Essential Commands
 
 ```bash
-# Run tests (MUST pass)
+# Run unit tests (MUST pass)
 npm run test
+
+# Run automated accessibility tests on all stories
+npm run test-storybook
+
+# Run accessibility tests in CI mode (fewer workers)
+npm run test-storybook:ci
 
 # Check linting (MUST be clean)
 npm run lint
 
-# View Storybook (VERIFY all stories display)
+# View Storybook with accessibility addon (during development)
 npm run storybook
 
 # Fix lint issues automatically
@@ -94,9 +100,7 @@ npm run storybook     # ✅ All stories display correctly
 // ComponentName.test.tsx
 import { ComponentName } from "./ComponentName";
 import { render, screen } from "@testing-library/react";
-import { renderWithLightBg, renderWithDarkBg } from "@Utils/testRenders";
 import { describe, expect, it } from "vitest";
-import { axe } from "vitest-axe";
 
 describe("ComponentName", () => {
   // Render test
@@ -111,22 +115,7 @@ describe("ComponentName", () => {
     expect(screen.getByText("Label")).toBeInTheDocument();
   });
 
-  // Accessibility test
-  it("should not have a11y violations (light mode)", async () => {
-    const { container } = renderWithLightBg(
-      <ComponentName>Label</ComponentName>
-    );
-    const results = await axe(container);
-    expect(results.violations).toEqual([]);
-  });
-
-  it("should not have a11y violations (dark mode)", async () => {
-    const { container } = renderWithDarkBg(
-      <ComponentName>Label</ComponentName>
-    );
-    const results = await axe(container);
-    expect(results.violations).toEqual([]);
-  });
+  // Add more tests as needed
 });
 ```
 
@@ -257,7 +246,7 @@ export const Variant2: Story = {
 | Add new variant, forget a11y docs | Always document accessibility features |
 | Forget to update design system | Always check `lib/main.stories.tsx` |
 | Use `any` types | Use proper TypeScript types |
-| No accessibility tests | Use `renderWithLightBg` and `renderWithDarkBg` with axe |
+| Forget accessibility tests | Run `npm run test-storybook` before PR |
 | Stories without descriptions | Always add story descriptions |
 | Forget dark mode testing | Always test light AND dark modes |
 
@@ -272,13 +261,18 @@ Before submitting a PR, run this:
 npm run lint
 # Expected: 0 Errors, 0 Warnings
 
-# 2. Run tests
+# 2. Run unit tests
 npm run test
 # Expected: All tests passing
 
-# 3. View Storybook
+# 3. Run automated accessibility tests
+npm run test-storybook
+# Expected: All accessibility checks passing
+
+# 4. View Storybook
 npm run storybook
 # Expected: All stories render correctly
+# ✅ Check: Accessibility panel shows no violations
 # ✅ Check: Does design system story show your changes?
 
 # 4. Build check

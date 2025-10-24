@@ -33,7 +33,6 @@ export const moriUIDesignSystem: Story = {
           style={{
             margin: 0,
             fontSize: "1.1rem",
-            opacity: 0.7,
           }}
         >
           A beautiful, accessible React component library with WCAG 2.1 AAA
@@ -89,9 +88,7 @@ export const moriUIDesignSystem: Story = {
                     border: "1px solid var(--color-neutral-200)",
                   }}
                 />
-                <small style={{ fontSize: "0.75rem", opacity: 0.7 }}>
-                  {swatch.name}
-                </small>
+                <small style={{ fontSize: "0.75rem" }}>{swatch.name}</small>
               </div>
             ))}
           </div>
@@ -139,9 +136,7 @@ export const moriUIDesignSystem: Story = {
                     border: "1px solid var(--color-neutral-200)",
                   }}
                 />
-                <small style={{ fontSize: "0.75rem", opacity: 0.7 }}>
-                  {swatch.name}
-                </small>
+                <small style={{ fontSize: "0.75rem" }}>{swatch.name}</small>
               </div>
             ))}
           </div>
@@ -189,9 +184,7 @@ export const moriUIDesignSystem: Story = {
                     border: "1px solid var(--color-neutral-300)",
                   }}
                 />
-                <small style={{ fontSize: "0.75rem", opacity: 0.7 }}>
-                  {swatch.name}
-                </small>
+                <small style={{ fontSize: "0.75rem" }}>{swatch.name}</small>
               </div>
             ))}
           </div>
@@ -203,6 +196,7 @@ export const moriUIDesignSystem: Story = {
             Status Colors
           </h3>
           <div
+            role="presentation"
             style={{
               display: "grid",
               gridTemplateColumns: "repeat(3, 1fr)",
@@ -223,6 +217,7 @@ export const moriUIDesignSystem: Story = {
                 {["50", "500", "900"].map((shade) => (
                   <div
                     key={shade}
+                    title={`${shade}`}
                     style={{
                       height: "60px",
                       borderRadius: "0.5rem",
@@ -234,9 +229,7 @@ export const moriUIDesignSystem: Story = {
                       fontSize: "0.75rem",
                       padding: "0.25rem",
                     }}
-                  >
-                    {shade}
-                  </div>
+                  />
                 ))}
               </div>
             </div>
@@ -254,6 +247,7 @@ export const moriUIDesignSystem: Story = {
                 {["50", "500", "900"].map((shade) => (
                   <div
                     key={shade}
+                    title={`${shade}`}
                     style={{
                       height: "60px",
                       borderRadius: "0.5rem",
@@ -265,9 +259,7 @@ export const moriUIDesignSystem: Story = {
                       fontSize: "0.75rem",
                       padding: "0.25rem",
                     }}
-                  >
-                    {shade}
-                  </div>
+                  />
                 ))}
               </div>
             </div>
@@ -285,6 +277,7 @@ export const moriUIDesignSystem: Story = {
                 {["50", "500", "900"].map((shade) => (
                   <div
                     key={shade}
+                    title={`${shade}`}
                     style={{
                       height: "60px",
                       borderRadius: "0.5rem",
@@ -296,9 +289,7 @@ export const moriUIDesignSystem: Story = {
                       fontSize: "0.75rem",
                       padding: "0.25rem",
                     }}
-                  >
-                    {shade}
-                  </div>
+                  />
                 ))}
               </div>
             </div>
@@ -374,14 +365,14 @@ export const moriUIDesignSystem: Story = {
             <Button variant="error" icon={Trash2}>
               Delete
             </Button>
-            <Button variant="primary" icon={Plus} />
+            <Button variant="primary" icon={Plus} aria-label="Add new item" />
           </div>
         </div>
 
         {/* Button States */}
         <div style={{ marginBottom: "2rem" }}>
           <h3 style={{ marginBottom: "1rem", fontSize: "1.1rem" }}>States</h3>
-          <p style={{ margin: "0 0 1rem 0", fontSize: "0.9rem", opacity: 0.7 }}>
+          <p style={{ margin: "0 0 1rem 0", fontSize: "0.9rem" }}>
             All button states maintain WCAG AAA contrast (7:1 ratio) for
             accessibility
           </p>
@@ -401,7 +392,7 @@ export const moriUIDesignSystem: Story = {
           <h3 style={{ marginBottom: "1rem", fontSize: "1.1rem" }}>
             Interactive States (Hover, Focus, Active)
           </h3>
-          <p style={{ margin: "0 0 1rem 0", fontSize: "0.9rem", opacity: 0.7 }}>
+          <p style={{ margin: "0 0 1rem 0", fontSize: "0.9rem" }}>
             Try hovering, focusing, or clicking buttons to see state transitions
           </p>
           <div
@@ -434,7 +425,6 @@ export const moriUIDesignSystem: Story = {
                   style={{
                     display: "block",
                     marginTop: "0.5rem",
-                    opacity: 0.6,
                   }}
                 >
                   Hover to see contrast
@@ -465,7 +455,7 @@ export const moriUIDesignSystem: Story = {
             }}
           >
             <h3 style={{ marginTop: 0, fontSize: "1rem" }}>♿ Accessibility</h3>
-            <p style={{ margin: 0, fontSize: "0.9rem", opacity: 0.8 }}>
+            <p style={{ margin: 0, fontSize: "0.9rem", opacity: 1 }}>
               WCAG 2.1 AAA compliant with enhanced color contrast (7:1 ratio)
               for all interactive elements.
             </p>
@@ -478,7 +468,7 @@ export const moriUIDesignSystem: Story = {
             }}
           >
             <h3 style={{ marginTop: 0, fontSize: "1rem" }}>🎨 Theming</h3>
-            <p style={{ margin: 0, fontSize: "0.9rem", opacity: 0.8 }}>
+            <p style={{ margin: 0, fontSize: "0.9rem", opacity: 1 }}>
               Light and dark mode support with seamless theme switching via CSS
               variables.
             </p>
@@ -491,7 +481,7 @@ export const moriUIDesignSystem: Story = {
             }}
           >
             <h3 style={{ marginTop: 0, fontSize: "1rem" }}>📦 Modular</h3>
-            <p style={{ margin: 0, fontSize: "0.9rem", opacity: 0.8 }}>
+            <p style={{ margin: 0, fontSize: "0.9rem", opacity: 1 }}>
               Tree-shakable components with optional icon support via Lucide
               React.
             </p>
@@ -504,7 +494,7 @@ export const moriUIDesignSystem: Story = {
             }}
           >
             <h3 style={{ marginTop: 0, fontSize: "1rem" }}>⚡ TypeScript</h3>
-            <p style={{ margin: 0, fontSize: "0.9rem", opacity: 0.8 }}>
+            <p style={{ margin: 0, fontSize: "0.9rem", opacity: 1 }}>
               Full type safety with TypeScript and generated type definitions
               for better DX.
             </p>

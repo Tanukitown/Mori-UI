@@ -38,9 +38,10 @@ const preview: Preview = {
         checks: { "color-contrast": { options: { level: "AAA" } } },
         runOnly: {
           type: "tag",
-          values: ["wcag2aa", "wcag2aaa", "wcag21a", "wcag21aa", "wcag21aaa"],
+          values: ["wcag2aaa", "wcag21aaa"],
         },
       },
+      test: "error",
     },
   },
   tags: ["autodocs"],

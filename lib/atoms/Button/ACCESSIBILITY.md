@@ -217,18 +217,38 @@ Explain why a button is disabled when possible:
 
 ### Automated Testing
 
-The component includes vitest-axe tests covering:
+The component includes automated accessibility tests that run via Storybook test runner:
 
 ```bash
-npm run test
+# Run accessibility tests on all stories
+npm run test-storybook
+
+# In CI/CD pipeline
+npm run test-storybook:ci
 ```
 
 Tests verify:
-- No axe violations for all variants
-- No axe violations for all sizes
-- Proper ARIA attributes
-- Keyboard focus management
 - Semantic HTML structure
+- Keyboard focus management
+- Proper ARIA attributes
+- Color contrast ratios
+- Component rendering with all variants
+
+See [Automated Accessibility Testing Guide](../../ACCESSIBILITY_TESTING.md) for details.
+
+### During Development
+
+While working on the component:
+
+```bash
+npm run storybook
+```
+
+Open the **Accessibility** panel at the bottom of Storybook to see:
+- ✅ Any violations with the component
+- ⚠️ Warnings
+- 💡 Passed checks
+- 📋 Detailed fix suggestions
 
 ### Manual Testing Checklist
 

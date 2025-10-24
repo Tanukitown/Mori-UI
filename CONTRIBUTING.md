@@ -29,10 +29,11 @@ When creating a new component or updating an existing one, you **must** complete
 
 **Minimum Test Coverage:**
 - 70%+ code coverage for new components
-- All accessibility violations checked with axe-core
+- All critical functionality tested
 - Both light and dark mode testing
 - Keyboard navigation testing
 - Screen reader compatibility
+- Automated accessibility testing with Storybook test runner (catches ~57% of WCAG issues)
 
 #### 3. ✅ Storybook Stories (CRITICAL)
 - [ ] Story file (`ComponentName.stories.tsx`) with multiple stories
@@ -168,9 +169,7 @@ export interface YourComponentProps extends ComponentProps<"div"> {
 // YourComponent.test.tsx
 import { YourComponent } from "./YourComponent";
 import { render, screen } from "@testing-library/react";
-import { renderWithLightBg, renderWithDarkBg } from "@Utils/testRenders";
 import { describe, expect, it } from "vitest";
-import { axe } from "vitest-axe";
 
 describe("YourComponent", () => {
   it("renders with default props", () => {
@@ -178,17 +177,7 @@ describe("YourComponent", () => {
     // Your assertions
   });
 
-  it("should not have accessibility violations (light mode)", async () => {
-    const { container } = renderWithLightBg(<YourComponent>Label</YourComponent>);
-    const results = await axe(container);
-    expect(results.violations).toEqual([]);
-  });
-
-  it("should not have accessibility violations (dark mode)", async () => {
-    const { container } = renderWithDarkBg(<YourComponent>Label</YourComponent>);
-    const results = await axe(container);
-    expect(results.violations).toEqual([]);
-  });
+  // Add more tests as needed
 });
 ```
 
@@ -488,9 +477,26 @@ Before submitting a PR, ensure:
 
 - **Coverage**: Minimum 70% for new components
 - **Unit Tests**: Test component behavior, not implementation
-- **Accessibility**: All tests use `vitest-axe` for a11y validation
+- **Accessibility**: All stories are tested with automated a11y checks (Storybook test runner + Axe)
 - **E2E**: Include user interaction scenarios
 - **Modes**: Test both light and dark modes
+
+### Automated Accessibility Testing
+
+All component stories are automatically tested for accessibility violations using:
+
+1. **Storybook Accessibility addon** (during development)
+   - Visual feedback while you work on components
+   - Run Storybook with: `npm run storybook`
+   - View a11y panel for each story
+
+2. **Storybook Test Runner** (before merge)
+   - Runs Axe checks on all stories programmatically
+   - Catches ~57% of WCAG issues automatically
+   - Run with: `npm run test-storybook`
+   - CI mode: `npm run test-storybook:ci`
+
+See [Accessibility Testing Guide](./lib/atoms/Button/ACCESSIBILITY.md) for best practices.
 
 ## Documentation Standards
 

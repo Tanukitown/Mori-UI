@@ -15,7 +15,7 @@
   }
 
   .moriui\:btn-success {
-    background-color: var(--moriui-color-success-600);
+    background-color: #004D3C;
     color: white;
     transition-property: background-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -23,15 +23,15 @@
   }
 
   .moriui\:btn-success:hover {
-    background-color: var(--moriui-color-success-700);
+    background-color: #015847;
   }
 
   .moriui\:btn-success:active {
-    background-color: var(--moriui-color-success-800);
+    background-color: #036B52;
   }
 
   .moriui\:btn-warning {
-    background-color: var(--moriui-color-warning-600);
+    background-color: #92400E;
     color: white;
     transition-property: background-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -39,15 +39,15 @@
   }
 
   .moriui\:btn-warning:hover {
-    background-color: var(--moriui-color-warning-700);
+    background-color: #78350F;
   }
 
   .moriui\:btn-warning:active {
-    background-color: var(--moriui-color-warning-800);
+    background-color: #451A03;
   }
 
   .moriui\:btn-error {
-    background-color: var(--moriui-color-error-600);
+    background-color: #991B1B;
     color: white;
     transition-property: background-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -55,15 +55,15 @@
   }
 
   .moriui\:btn-error:hover {
-    background-color: var(--moriui-color-error-700);
+    background-color: #7F1D1D;
   }
 
   .moriui\:btn-error:active {
-    background-color: var(--moriui-color-error-800);
+    background-color: #5B0606;
   }
 
   .moriui\:btn-neutral {
-    background-color: var(--moriui-color-neutral-600);
+    background-color: #3F3935;
     color: white;
     transition-property: background-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -71,11 +71,11 @@
   }
 
   .moriui\:btn-neutral:hover {
-    background-color: var(--moriui-color-neutral-700);
+    background-color: #292522;
   }
 
   .moriui\:btn-neutral:active {
-    background-color: var(--moriui-color-neutral-800);
+    background-color: #1C1917;
   }
 
   .moriui\:btn-small {

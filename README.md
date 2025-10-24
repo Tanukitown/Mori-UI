@@ -15,11 +15,11 @@ A modern, accessible React component library built with TypeScript, Vite, and Ta
 ## Features
 
 - 🎨 **Themeable Components** - Light and dark mode support with customizable themes
-- ♿ **Accessible** - WCAG 2.1 AAA compliant components with comprehensive accessibility testing
+- ♿ **Accessible** - WCAG 2.1 AAA compliant components with comprehensive automated accessibility testing
 - 📦 **Tree-shakeable** - Built with ES modules for optimal bundle sizes
 - 🚀 **High Performance** - Built with Vite for lightning-fast development and builds
 - 📖 **Storybook Docs** - Interactive component library with documentation
-- 🧪 **Well Tested** - Comprehensive test coverage using Vitest
+- 🧪 **Well Tested** - Comprehensive test coverage using Vitest and Axe for accessibility
 - 💅 **Styled with Tailwind** - Utility-first CSS with Tailwind CSS integration
 
 ## Getting Started
@@ -82,6 +82,12 @@ npm run test:ui
 
 # Run tests with coverage
 npm run test:coverage
+
+# Run automated accessibility tests on all stories
+npm run test-storybook
+
+# Run accessibility tests in CI mode
+npm run test-storybook:ci
 
 # Lint and check code
 npm run lint
@@ -165,18 +171,28 @@ Interactive component documentation is available in [Storybook](https://tanukito
 
 ## Testing
 
-The library uses [Vitest](https://vitest.dev/) for unit testing and [React Testing Library](https://testing-library.com/react) for component testing.
+The library uses [Vitest](https://vitest.dev/) for unit testing, [React Testing Library](https://testing-library.com/react) for component testing, and automated accessibility testing with Storybook test runner and Axe.
 
 ```bash
-# Run tests
+# Run unit tests
 npm run test
 
-# Run tests in watch mode
-npm run test
+# Run automated accessibility tests on all stories
+npm run test-storybook
 
 # Generate coverage report
 npm run test:coverage
 ```
+
+### Accessibility Testing
+
+Automated accessibility tests catch approximately 57% of WCAG 2.1 issues:
+
+- **During Development**: `npm run storybook` - Use the Accessibility panel for real-time feedback
+- **Before Merge**: `npm run test-storybook` - Run Axe checks on all component stories
+- **In CI/CD**: `npm run test-storybook:ci` - Optimized for pipeline environments
+
+See [ACCESSIBILITY_TESTING.md](./ACCESSIBILITY_TESTING.md) for detailed guide.
 
 ## Code Quality
 
@@ -192,8 +208,16 @@ Mori UI is committed to accessibility standards:
 - ✅ WCAG 2.1 AAA compliance
 - ✅ Keyboard navigation support
 - ✅ Screen reader friendly
-- ✅ Color contrast compliance
+- ✅ Color contrast compliance (7:1 ratio)
 - ✅ Semantic HTML
+- ✅ Automated accessibility testing with Axe
+
+All components are tested with:
+- **Automated Axe checks** via Storybook test runner
+- **Manual keyboard navigation** testing
+- **Screen reader** testing (NVDA, JAWS, VoiceOver)
+
+Learn more in [ACCESSIBILITY_TESTING.md](./ACCESSIBILITY_TESTING.md).
 
 ## Browser Support
 

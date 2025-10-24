@@ -334,6 +334,7 @@ export const IconOnly: Story = {
     variant: "primary",
     size: "medium",
     icon: CheckCircle,
+    "aria-label": "Confirm",
   },
   parameters: {
     docs: {
@@ -699,7 +700,7 @@ export const InteractiveStateShowcase: Story = {
     >
       <div>
         <h3 style={{ margin: "0 0 12px 0" }}>Default State</h3>
-        <p style={{ margin: "0 0 12px 0", fontSize: "12px", color: "#666" }}>
+        <p style={{ margin: "0 0 12px 0", fontSize: "12px", color: "#2C2520" }}>
           The button in its normal state. Keyboard accessible and ready for
           interaction.
         </p>
@@ -710,7 +711,7 @@ export const InteractiveStateShowcase: Story = {
 
       <div>
         <h3 style={{ margin: "0 0 12px 0" }}>Keyboard Focus</h3>
-        <p style={{ margin: "0 0 12px 0", fontSize: "12px", color: "#666" }}>
+        <p style={{ margin: "0 0 12px 0", fontSize: "12px", color: "#2C2520" }}>
           Tab to the button below to see the focus indicator. Essential for
           keyboard navigation.
         </p>
@@ -721,7 +722,7 @@ export const InteractiveStateShowcase: Story = {
 
       <div>
         <h3 style={{ margin: "0 0 12px 0" }}>Hover Indication</h3>
-        <p style={{ margin: "0 0 12px 0", fontSize: "12px", color: "#666" }}>
+        <p style={{ margin: "0 0 12px 0", fontSize: "12px", color: "#2C2520" }}>
           Hover over the button to see the color transition. Background becomes
           darker (#4D3E2D).
         </p>
@@ -732,7 +733,7 @@ export const InteractiveStateShowcase: Story = {
 
       <div>
         <h3 style={{ margin: "0 0 12px 0" }}>Loading State</h3>
-        <p style={{ margin: "0 0 12px 0", fontSize: "12px", color: "#666" }}>
+        <p style={{ margin: "0 0 12px 0", fontSize: "12px", color: "#2C2520" }}>
           Loading state disables interaction and shows animated dots. Maintains
           accessibility.
         </p>
@@ -743,7 +744,7 @@ export const InteractiveStateShowcase: Story = {
 
       <div>
         <h3 style={{ margin: "0 0 12px 0" }}>Disabled State</h3>
-        <p style={{ margin: "0 0 12px 0", fontSize: "12px", color: "#666" }}>
+        <p style={{ margin: "0 0 12px 0", fontSize: "12px", color: "#2C2520" }}>
           Disabled buttons cannot be interacted with. Use aria-disabled or title
           for context about why.
         </p>
@@ -754,7 +755,7 @@ export const InteractiveStateShowcase: Story = {
 
       <div>
         <h3 style={{ margin: "0 0 12px 0" }}>With Icon</h3>
-        <p style={{ margin: "0 0 12px 0", fontSize: "12px", color: "#666" }}>
+        <p style={{ margin: "0 0 12px 0", fontSize: "12px", color: "#2C2520" }}>
           Icons enhance clarity. They are decorative (aria-hidden) and the text
           provides the accessible name.
         </p>
