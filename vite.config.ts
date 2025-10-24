@@ -19,7 +19,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, "lib/main.ts"),
       formats: ["es"],
-      name: "TanukitownUI",
+      name: "Mori UI",
     },
     rollupOptions: {
       external: ["react", "react/jsx-runtime"],

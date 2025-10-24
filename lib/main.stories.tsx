@@ -21,13 +21,13 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const TanukitownUIDesignSystem: Story = {
+export const MoriUIDesignSystem: Story = {
   render: () => (
     <div style={{ padding: "2rem", maxWidth: "1200px" }}>
       {/* Header */}
       <div style={{ marginBottom: "3rem" }}>
         <h1 style={{ margin: "0 0 0.5rem 0", fontSize: "2.5rem" }}>
-          🍃 Tanukitown UI
+          🍃 Mori UI
         </h1>
         <p
           style={{

@@ -28,6 +28,12 @@ export interface ButtonProps extends ComponentProps<"button"> {
   isLoading?: boolean;
 
   /**
+   * The text to display when the button is loading.
+   * @default "Loading"
+   */
+  loadingText?: string;
+
+  /**
    * An optional icon to display in the button.
    */
   icon?: LucideIcon;

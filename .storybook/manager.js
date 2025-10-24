@@ -1,7 +1,7 @@
-import tanukitownUITheme from "./theme";
+import moriUITheme from "./theme";
 
 import { addons } from "storybook/manager-api";
 
 addons.setConfig({
-  theme: tanukitownUITheme,
+  theme: moriUITheme,
 });

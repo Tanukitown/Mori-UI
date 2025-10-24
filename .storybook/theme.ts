@@ -3,15 +3,15 @@ import { create } from "storybook/theming/create";
 export default create({
   base: "light",
   // Typography
-  fontBase: '"Nunito Sans", -apple-system, "Segoe UI", sans-serif',
+  fontBase: '"Manrope", -apple-system, "Segoe UI", sans-serif',
   fontCode: "monospace",
 
-  brandTitle: "🍃 Tanukitown UI",
+  brandTitle: "🍃 Mori UI",
   brandUrl: "https://github.com",
   brandImage: undefined,
   brandTarget: "_self",
 
-  // Tanukitown UI Colors
+  // Mori UI Colors
   colorPrimary: "#5C4A36",
   colorSecondary: "#2D4620",
 

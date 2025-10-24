@@ -18,7 +18,7 @@ body {
 
 /* Rebrand the title */
 .sb-bar a[title="Storybook"]::before {
-  content: "Tanukitown UI" !important;
+  content: "Mori UI" !important;
 }
 
 .sb-bar a[title="Storybook"] {

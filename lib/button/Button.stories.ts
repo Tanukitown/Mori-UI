@@ -146,6 +146,17 @@ export const Loading: Story = {
   },
 };
 
+export const LoadingCustomText: Story = {
+  name: "Loading (Localized)",
+  args: {
+    variant: "primary",
+    size: "medium",
+    isLoading: true,
+    loadingText: "Cargando",
+    children: "Enviar",
+  },
+};
+
 export const Disabled: Story = {
   args: {
     variant: "primary",

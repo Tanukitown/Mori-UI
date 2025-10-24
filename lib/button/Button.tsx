@@ -7,6 +7,7 @@ export const Button = ({
   variant = "primary",
   size = "medium",
   isLoading = false,
+  loadingText = "Loading",
   icon: Icon,
   iconPosition = "left",
   disabled,
@@ -19,6 +20,19 @@ export const Button = ({
   const iconElement =
     Icon && !isLoading ? <Icon className={clpx("btn-icon")} /> : null;
 
+  const loadingElement = isLoading ? (
+    <>
+      {loadingText}
+      <span className={clpx("btn-loading-dots")} aria-hidden="true">
+        <span className={clpx("btn-loading-dot")} />
+        <span className={clpx("btn-loading-dot")} />
+        <span className={clpx("btn-loading-dot")} />
+      </span>
+    </>
+  ) : (
+    children
+  );
+
   return (
     <button
       disabled={disabled || isLoading}
@@ -26,7 +40,7 @@ export const Button = ({
       {...props}
     >
       {iconPosition === "left" && iconElement}
-      {isLoading ? "Loading..." : children}
+      {loadingElement}
       {iconPosition === "right" && iconElement}
     </button>
   );
